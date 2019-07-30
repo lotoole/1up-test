@@ -1,7 +1,9 @@
 // Set up JDBC connection
 var presto = require('presto-client');
 var client = new presto.Client({user: 'presto', host: '34.74.56.14', catalog: 'hive', schema: 'leap'});
-
+////////////////////////////////////////////////////////////////////
+// param: callback function, pass it the user id retrieved from query
+////////////////////////////////////////////////////////////////////
 function getUser(getAllergies) {
     let results;
 
@@ -28,7 +30,10 @@ function getUser(getAllergies) {
         error:   function(error){ console.log('e', error) }
     });    
 }
-
+////////////////////////////////////////////////////////////////////
+// param1: userId passed to query
+// param2: Callback, pass it the resulting list of allergies from query
+////////////////////////////////////////////////////////////////////
 function getAllergieList(userId, displyresults) {
     let results;
 

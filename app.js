@@ -5,7 +5,7 @@
 // - Get and display the allergies of user Marshall526 Zboncak558
 //
 // Author: Liam O'Toole
-// Data: July 30, 2019
+// Date: July 30, 2019
 //
 /////////////////////////////////////////////////////////////////////
 
